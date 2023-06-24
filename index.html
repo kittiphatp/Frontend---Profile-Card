@@ -10,26 +10,103 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    body {
+      background-color: rgb(29, 202, 202);
+      background-image: url(./images/bg-pattern-top.svg);
+
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+    }
+
+    .wrapper {
+      background-color: white;
+      width: 400px;
+      height: 500px;
+      border-radius: 15px;
+
+      margin: 150px auto 50px auto;
+    }
+
+
+    /* IMAGE IN WRAPPER */
+    .wrapper-img {width: 400px; position: relative; border-top-left-radius: 15px; border-top-right-radius: 15px;}
+
+    /* PERSON */
+    .person-div {text-align: center; padding-bottom: 30px;}
+    .person-img {border-radius: 50%; border: 5px solid white; position: absolute; z-index: 50; top: 27%; left: 47%; }
+
+    /* PROFILE */
+    .profile {display: flex; flex-direction: column; align-items: center; padding-bottom: 30px; padding-top: 60px;}
+    .name {font-size: x-large; font-weight: bolder;}
+    .age , .city {font-size: 0.8em; font-weight: normal; color: gray; letter-spacing: 2px;}
+
+    /* LINE BREAK */
+    
+
+    /* FOOTER */
+    .footer {
+      display: flex;
+      justify-content: space-around;
+    }
+    .fc1 , .fc2 , .fc3 { text-align: center;}
+    .fnum {font-size: x-large; font-weight: bolder;}
+    .fdesc {font-size: 0.8em; color: gray; letter-spacing: 2px;}
+
+
+    .attribution { font-size: 11px; text-align: center; padding-top: 20px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <div class="wrapper">
 
-  803K
-  Likes
+    <!-- IMAGE IN WRAPPER -->
+    <img src="./images/image-victor.jpg" class="person-img">
+    <img src="./images/bg-pattern-card.svg" class="wrapper-img">
 
-  1.4K
-  Photos
+
+    <!-- PERSON PICTURE -->
+    <div class="person-div">
+      <!-- <img src="./images/image-victor.jpg" class="person-img"> -->
+    </div>
+
+    <!-- PROFILE -->
+    <div class="profile">
+      <div class="name">Victor Crest<span class="age">   26</span></div>
+      <div class="city">London</div>
+    </div>
+
+    <hr>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="fc1">
+        <p class="fnum">80K</p>
+        <p class="fdesc">Followers</p>
+      </div>
+
+      <div class="fc2">
+        <p class="fnum">803K</p>
+        <p class="fdesc">Likes</p>
+      </div>
+
+      <div class="fc3">
+        <p class="fnum">1.4K</p>
+        <p class="fdesc">Photos</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Kittiphat Pisuittporn</a>.
   </div>
 </body>
 </html>
